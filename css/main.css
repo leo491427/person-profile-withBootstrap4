@@ -1,0 +1,220 @@
+body {
+    font-size: 16px;
+    background-image: url(../img/main_bg.png);
+    background-color: rgba(128, 128, 128, 0.3);
+    background-repeat: no-repeat;
+    width: 80%;
+    margin: auto;
+}
+
+#homepage header {
+    width: 100%;
+    margin: 15px auto 5px auto;
+
+}
+
+#homepage header .title { 
+    color: #222;
+    font-size: 2.618em;
+    line-height: 2;
+}
+
+#homepage header .title p {
+
+}
+
+#homepage header span {
+    color: rgb(0, 189, 0);
+}
+
+#homepage nav ul li a {
+    font-size: 1em;
+    color: grey;
+}
+
+#homepage #sm-nav {
+    display: none;
+}
+
+section #person-info--profile {
+    position: relative;
+    height: 300px;
+    width: 100%;
+    /* background: rgba(0, 255, 0, 0.4); */
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    box-shadow: 0 10px 50px 5px rgba(0, 0, 0, 0.2);
+}
+section #person-info--profile>img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0.7;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+
+section #person-info--profile {
+    /* background-image: url(../img/person-info-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: opacity(0.5); */
+
+}
+
+section #person-info--profile .background-img-wrapper {
+    border: 1px solid red;    
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+/* section #person-info--profile img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    z-index: 0;
+}
+
+section #person-info--profile .background-img-wrapper .img-mask {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(0, 0, 0, 0);
+
+    top: 0;
+    left: 0;
+    border: 3px solid blue;
+} */
+
+section #person-info--profile #avatar {
+    opacity: 1;
+}
+section #person-info--profile #avatar img {
+
+    width: 300px;
+    height: auto;
+    padding-top: 20px;
+    margin-left: 20px;
+}
+
+section #person-info--profile #avatar img:hover {
+    -webkit-animation: 1s upndown 1;
+    animation: 1s upndown 1;
+}
+
+@-webkit-keyframes upndown {
+    0% {padding-top: 20px;}
+    50% {padding-top: 0; box-shadow: 6px 12px 12px 5px rgba(0, 0, 0, 0.2);}
+    100% {padding-top: 20px;}
+}
+
+@keyframes upndown {
+    0% {padding-top: 20px;}
+    50% {padding-top: 0; box-shadow: 6px 12px 12px 5px rgba(0, 0, 0, 0.2);}
+    100% {padding-top: 20px;}
+}
+
+section #contact-link {
+    position: relative;
+}
+
+section #contact-link .wrapper {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+}
+section #contact-link--name p {
+    font-size: 2.618em;
+    font-weight: 800;
+    color: aliceblue;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+section #contact-link--skills {
+    font-size: 1.618em;
+    color: aliceblue;
+    text-align: center;
+    line-height: 2.5;
+}
+
+section #contact-link--socialmedia {
+    text-align: center;
+}
+section #contact-link--socialmedia .fab {
+    text-align: center;
+    width: 36px;
+    height: 36px;
+    color: grey;
+    background-color: white;
+    border-radius: 100%;
+    font-size: 1em;
+    text-align: center;
+    padding-top: 10px; 
+    margin-right: 2px;
+    margin-left: 2px;
+}
+
+section #person-info--details {
+
+    padding: 40px 0 20px 30px;
+    height: auto;
+    width: 100%;
+    background-color: rgba(240, 248, 255, 0.7);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    box-shadow: 0 10px 50px 5px rgba(0, 0, 0, 0.2);
+}
+
+section #person-info--details #person-info--details--aboutme p {
+    /* border: 1px solid red;
+    height: 100px;
+    width: 100px;
+    color: red;
+    background-color: aliceblue; */
+}
+
+section #person-info--details--aboutme h1 span {
+    color: rgb(0, 189, 0);
+}
+
+section #person-info--details--contact table tr th:nth-child(2){
+    font-weight: 400;
+}
+
+section #person-info--details--contact ul {
+    line-height: 1.618;
+}
+
+footer {
+    margin: 30px auto;
+}
+footer p {
+    text-align: center;
+    color: grey;
+}
+
+@media only screen and (max-width: 768px) {
+
+
+    section #person-info--profile {
+        height: 600px;
+    }
+
+    section #person-info--profile #avatar img {
+        display: block;
+        margin: auto;
+    }
+
+    section #contact-link .wrapper {
+        top: 0;
+    }
+}
