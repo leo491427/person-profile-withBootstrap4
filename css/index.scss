@@ -1,0 +1,174 @@
+@import "general";
+
+%animation__upndown {
+
+};
+
+html {
+    margin: 0;
+    padding: 0;
+
+}
+body {
+    margin: 0;
+    padding: 0;
+
+    .wrapper {
+        // display: flex;
+        // flex-wrap: wrap;
+        // justify-content: center;
+        // align-content: center; 
+        // align-items: center;
+        // vertical-align: middle;
+        // min-height: 250px;
+    }
+
+//    background-image: url(../img/bg-mysterious.png);
+    background-image: url(../img/main_bg.png);
+    background-color: rgba(196, 196, 196, 0.2);
+    // background-repeat: repeat-y;
+    background-size: 100%;
+
+    header{
+        padding: 0px!important;
+
+        .active {
+            cursor: default;
+        }
+
+
+    }
+
+    #home {
+        margin-top: 80px;
+
+        >div:nth-child(1) {
+            min-height: 250px;
+            text-align: center;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+        }
+
+        #person-info__avatar {
+
+ 
+            text-align: center;
+            // margin-bottom: -30px;
+
+            figure {
+                width: 90%;
+                margin: 10% 0 0 10%;
+
+            }
+
+            img {
+                width: 100%;
+                height: auto;
+                position: relative;
+                // bottom: -10px;
+                top: 10px;
+
+                border: 2px solid white;
+                // transition: 0.5s top ease-out;
+
+                &:hover {
+                    // top: 0;
+                    // box-shadow: 5px 10px 10px 2px rgba(0, 0, 0, 0.2);
+                    animation: upndown 1s ease-out 1;
+                    @keyframes upndown {
+                        0% {top: 10px;}
+                        50% {top: 0; box-shadow: 6px 12px 12px 5px rgba(0, 0, 0, 0.2);}
+                        100% {top: 10px;}
+                    }
+                
+                }
+
+            }
+        }
+
+        #person-info__contact {
+            .wrapper {
+                margin-top: 40px;
+                position: relative;
+                @media (max-width: 768px) {
+                    margin-top: 0px;
+                }
+
+                h2 {
+                    padding-top: 5%;
+                    color: white;
+                    font-size: 3rem;
+                    font-weight: 900;
+                    word-spacing: 0.5rem;
+                }
+
+                p {
+                    padding-top: 1%;
+                    color: white;
+                    font-size: 1.6rem;
+                    font-weight: 400;
+
+                }
+
+                p:nth-child(2) {
+                    width: 100%;
+                    position: absolute;
+                    top: 42%;
+                    transform: translateX(-50%);
+                    left: 50%;
+
+                }
+
+                
+            }
+            &__socialmedia {
+                padding-top: 1%;
+                padding-bottom: 5%;
+                .fab {
+                    width: 36px;
+                    height: 36px;
+                    color: grey;
+                    background-color: white;
+                    border-radius: 100%;
+                    font-size: 1em;
+                    padding-top: 10px; 
+                    margin-right: 2px;
+                    margin-left: 2px;
+                }
+
+            }
+        }
+
+        >div:nth-child(2) {
+            padding: 40px 20px;
+            background-color: rgba(255, 255, 255, 0.6);
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+        }
+
+        #person-info__details {
+            text-align: center;
+        }
+    }
+
+    footer {
+        margin: 30px auto;
+    }
+    footer p {
+        text-align: center;
+        color: grey;
+    }
+
+}
+
+@media (max-width: 768px) {
+    body #home #person-info__avatar figure {
+        width: 50%;
+        margin: auto;
+    }
+
+}
+
+
+
+
