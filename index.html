@@ -3,132 +3,112 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Home</title>
     <link rel="stylesheet" href="./css/all.min.css">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
-    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/animate.css">
+    <link rel="stylesheet" href="./css/index.css">
     <script src="./js/jquery-3.3.1.min.js"></script>
     <script src="./js/popper.min.js"></script>
     <script src="./js/bootstrap.min.js"></script>
+
 </head>
 <body>
-    <div id="homepage">
-        <header class="row align-items-center justify-content-between">
-            <div class="title col-md-3 col-lg-4 col-xl-5">
-                <p>Leo <span>Li</span></p>
+    <header id="header-navbar" class="container-fluid fixed-top">
+        <nav class="navbar navbar-expand-md navbar-light" id="navbar">
+            <h2 class="navbar-brand pt-2 font-weight-bold">Leo <span class="text-success">Li</span></h2>
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarSupportedContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <nav class="navbar-nav nav-tabs ml-auto">
+                    <a class="nav-item nav-link active text-muted" href="#"  tabindex="-1">Home</a>
+                    <a class="nav-item nav-link text-dark" href="#">Resume</a>
+                    <a class="nav-item nav-link text-dark" href="#">Service</a>
+                    <a class="nav-item nav-link text-dark" href="#">Blog</a>
+                    <a class="nav-item nav-link text-dark" href="#">Contact</a>                    
+                </nav>
+                <!-- <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Resume</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Service</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>                    
+                </ul> -->
             </div>
-            <nav id="md-nav" class="col-md-9 col-lg-8 col-xl-7">
-                <ul class="nav nav-tabs">
-                    <li class="nav-item">
-                        <a href="#" class="nav-link active">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">Resume</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">Service</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">Blog</a>
-                    </li>
-                    <li class="nav-item">       
-                        <a href="#" class="nav-link">Contact</a>
-                    </li>
-                </ul>
-            </nav>
-            <nav id="sm-nav" class="navbar navbar-light col-md-1 col-lg-1 col-xl-1">
+        </nav>
+    </header>
 
-            </nav>
-        </header>
-        <section id="person-info">
-            <div id="person-info--profile" class="row">
-                <img src="./img/person-info-bg.png" alt="background-img">
-                <div id="avatar" class="col-md-5 col-lg-4">
-                    <img src="./img/avatar.png" alt="avatar" class="">
+    <section id="Home" class="container">
+            <div class="row bg--green">
+                <!-- <img src="./img/person-info-bg.png" alt="background-img"> -->
+                <div id="person-info__avatar" class="col-md-5 col-lg-4">
+                    <figure>
+                        <img src="./img/avatar.png" alt="avatar" >
+                    </figure>
                 </div>
-                <div id="contact-link" class="col-md-7 col-lg-8">
+
+                <div id="person-info__contact" class="col-md-7 col-lg-8">
                     <div class="wrapper">
-                        <div id="contact-link--name">
-                            <p>Leo Li</p>
-                        </div>
-                        <div id="contact-link--skills">
-                            <p>full-stack learner</p>
-                        </div>
-                        <div id="contact-link--socialmedia">
+                            <h2>Leo Li</h2>
+                            <p class="rolling-text fadeOut slow animated">front-end developer</p>
+                            <p class="rolling-text fadeIn slow animated">full-stack learner</p>
+                        <div id="person-info__contact__socialmedia">
                             <a href="#"><i class="fab fa-linkedin"></i></a>
                             <a href="#"><i class="fab fa-facebook"></i></a>
                             <a href="#"><i class="fab fa-weixin"></i></a>
                         </div>  
                     </div>
-                    
                 </div>
             </div>
-            <div id="person-info--details" class="row">
-                <div id="person-info--details--aboutme" class="col-md-5">
-                    <h1>About <span>me</span></h1>
+
+            <div class="row">
+                <div id="person-info__aboutme" class="col-md-5">
+                    <h1>About <span class="text-success">me</span></h1>
                     <p>Hello! I'm Leo. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum repellat nulla ut aliquid voluptatem? Quisquam temporibus, velit dicta eius iusto molestias tempore vero expedita! Cum alias facilis dolor ipsam voluptatum?</p>
                 </div>
-                <div id="person-info--details--contact" class="col-md-6 offset-md-1 row">    
-                    <table class="table table-hover table-responsive">
+                <div id="person-info__details" class="col-md-6 offset-md-1">    
+                    <table class="table table-hover table-responsive-md ">
                         <tr>
                             <th>Age</th>
-                            <th>30</th>
+                            <th class="font-weight-normal">30</th>
                         </tr>
                         <tr>
                             <th>Residence</th>
-                            <th>Australia</th>
+                            <th class="font-weight-normal">Australia</th>
                         </tr>
                         <tr>
                             <th>Address</th>
-                            <th>Jesmond Road, Fig Tree Pocket, Brisbane</th>
+                            <th class="font-weight-normal">Fig Tree Pocket, Brisbane, Queesland</th>
                         </tr>
                         <tr>
                             <th>Email</th>
-                            <th>leo491427@gmail.com</th>
+                            <th class="font-weight-normal">leo491427@gmail.com</th>
                         </tr>
                         <tr>
                             <th>Mobiel</th>
-                            <th>0431491427</th>
+                            <th class="font-weight-normal">+6112345678</th>
+            
                         </tr>
                     </table>
                 </div>
             </div>
-        </section>
-        <footer>
-            <p>&copy Leo Li, leo491429@gmail.com</p>
-        </footer>
-    </div>
-   
-<!--     
+    </section>
 
+    <footer>
+        <p>&copy Leo Li, leo491429@gmail.com</p>
+    </footer>
 
-    <div class="row">
-        <div class="col-3">3</div>
-        <div class="col-6">6</div>
-        <div class="col-3">3</div>
-    </div>
-
-    <div class="row container">
-        <div class="row col-6">
-            <div class="col-4 col-md-12">2</div>
-            <div class="col-4 col-md-12">2</div>
-            <div class="col-4 col-md-12">2</div>
-            <div class="col-4 col-md-12">2</div>
-            <div class="col-4 col-md-12">2</div>
-            <div class="col-4 col-md-12">2</div>
-        </div>
-    </div>
-
-    <a href="#" class="btn btn-primary btn-lg active" role="button">Primary link</a>
-    <button type="button" class="btn btn-lg btn-primary" disabled="disabled">Primary button</button>
-    <button type="button" class="btn btn-default btn-lg" disabled="disabled">Button</button>
-
-    <div class="img-wrapper img-responsive img-rounded img-circle">
-        <img src="./img/avatar.png" class="img-fluid rounded img-responsive img-rounded img-circle" alt="avatar">
-    </div> -->
-
-    <!-- <script src="./js/jquery-3.3.1.min.js"></script>
-    <script src="./js/popper.min.js"></script>
-    <script src="./js/bootstrap.min.js"></script> -->
+    <script src="./main.js" defer></script>
 </body>
 </html>
